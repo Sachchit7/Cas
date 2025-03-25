@@ -1,24 +1,26 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: url('background.JPEG') no-repeat center center fixed;
-    background-size: cover;
     color: #ffffff;
+    background: url(background.jpg) no-repeat center center fixed;
+    background-size: cover;
     position: relative;
 }
 
-body::before{
+body::before {
     content: "";
     position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background: rgbna(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* 50% opacity black overlay */
     z-index: -1;
 }
 
+/* Header */
 header {
     text-align: center;
     background: rgba(0, 0, 0, 0.6);
@@ -26,38 +28,45 @@ header {
     border-radius: 10px;
 }
 
+/* Header Title */
 header h1 {
     font-size: 2.5em;
 }
 
+/* Header Description */
 header p {
     font-size: 1.2em;
 }
 
-main{
-    text-align:center;
-    padding:40px;
+/* Main Content */
+main {
+    text-align: center;
+    padding: 40px;
+    padding-bottom:100px;
 }
 
+/* Issue List Section */
 .issues-list {
-    background:rgba(00,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
     padding: 20px;
-    border-radius:10px;
-    display: inline-block
+    border-radius: 10px;
+    display: inline-block;
 }
 
+/* Issue List Title */
 .issues-list h2 {
     font-size: 2em;
     color: #ffffff;
 }
 
+/* Issue List Items */
 .issues-list ul {
     list-style: none;
     padding: 0;
 }
 
 .issues-list li {
-    background: white;
+    background: rgba(255, 255, 255, 0.2);
     margin: 10px auto;
     padding: 15px;
     width: 60%;
@@ -66,7 +75,7 @@ main{
 }
 
 .issues-list li:hover {
-    background: rgba(255,255,255,0.4);
+    background: rgba(255, 255, 255, 0.4);
 }
 
 .issues-list a {
@@ -76,37 +85,27 @@ main{
     font-weight: bold;
 }
 
-.feedback{
-    background: rgba(0,0,0,0.6);
-    padding:20px;
+.feedback {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
     border-radius: 10px;
-    margin-top: 40px;
+    margin-top: 5px;
     display: inline-block;
-
 }
 
-.feedback-button{
+.feedback-button {
     display: inline-block;
     padding: 15px 25px;
     margin-top: 10px;
-    background color: #3498db;
-    color:#fff;
-    font-size:1.2em;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 1.2em;
     text-decoration: none;
-    border-radius:5px;
-    transition:0.3s;
+    border-radius: 5px;
+    transition: 0.3s;
 }
 
-.feedback-button: hover{
+.feedback-button:hover {
     background-color: #2980b9;
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
-    background: rbga(0,0,0,0.6);
-    color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
