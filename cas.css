@@ -109,3 +109,52 @@ main {
     background-color: #2980b9;
 }
 
+
+.slideshow-container {
+        position: relative;
+        max-width: 50%;
+        margin: auto;
+        overflow:hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    .slide{
+        display: none;
+        width: 100%;
+    }
+
+    .slide img{
+        width: 100%;
+        border-radius: 10px;
+    }
+
+
+    .headline-list{
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .headline-list ul{
+        list-style:none;
+        padding: 0;
+    }
+
+    .headline-list li{
+        background: rgba(255, 255, 255, 0.2);
+        margin: 10px auto;
+        padding: 15px;
+        width: 60%;
+        transition: 0.3s;
+    }
+
+    .headline-list li:hover{
+        background:rgba(255,255,255,0.4);
+    }
+
+    .headline-list a{
+        text-decoration: none;
+        color:#ffffff;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
